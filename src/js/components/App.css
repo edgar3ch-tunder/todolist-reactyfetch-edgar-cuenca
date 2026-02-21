@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 80px;
+  color: rgba(175, 47, 47, 0.15);
+  margin-bottom: 10px;
+}
+
+.todo-card {
+  background: white;
+  width: 450px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  border-bottom: 1px solid #ededed;
+  padding: 15px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* Ocultar la X por defecto */
+.delete-icon {
+  color: #cc9a9a;
+  cursor: pointer;
+  display: none; 
+}
+
+/* Mostrar la X solo cuando pasas el mouse por encima del <li> */
+.task-item:hover .delete-icon {
+  display: block;
+}
+
+.footer {
+  padding: 10px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #ededed;
+  text-align: left;
+}
